@@ -12,12 +12,9 @@ export default function Home() {
   return (
     <div className="bg-white w-full md:bg-gray-50 min-h-screen flex flex-col justify-center">
       <header className="md:py-4 w-full md:px-9 border-b border-gray-200 md:border-transparent max-w-5xl mx-auto md:mt-5 py-2.5 pl-6 pr-4 flex items-center justify-between">
-        <Image
-          height="28"
-          width="102"
-          src="/logo.svg"
-          alt="This is logo nigga"
-        />
+        <Link href="/">
+          <Image height="28" width="102" src="/logo.svg" alt="Task Rule" />
+        </Link>
         <nav className="hidden md:block">
           <ul className="flex gap-x-9">
             <li className="text-sm/6 font-medium text-gray-800">
@@ -47,7 +44,7 @@ export default function Home() {
       <main className="overflow-hidden grow w-full md:mt-9 mx-auto max-w-7xl rounded-t-3xl border border-gray-900/5 bg-white shadow-sm">
         <hgroup className="mt-8 md:mt-10 px-6 md:px-0">
           <h1 className="text-lg md:text-xl text-gray-800 font-medium md:text-center">
-            Welcome back, Nigga
+            Welcome back, Ilija
           </h1>
           <p className="text-gray-600 text-sm/6 md:mx-auto mt-3 md:text-center md:max-w-md">
             Stay organized and on top of your responsibilities with a
@@ -67,10 +64,14 @@ export default function Home() {
           <div className="hidden md:flex mr-12 gap-x-9">
             <button className="flex items-center gap-x-1.5">
               <PlusSmallIcon className="w-4 h-4 text-gray-500" />
-              <span className="text-gray-900 text-sm/6">New category</span>
+              <span className="text-gray-900 font-medium text-sm/6">
+                New category
+              </span>
             </button>
             <button className="flex items-center gap-x-1.5">
-              <span className="text-gray-900 text-sm/6">Sort by</span>
+              <span className="text-gray-900 font-medium text-sm/6">
+                Sort by
+              </span>
               <ChevronDownIcon className="w-4 h-4 text-gray-500" />
             </button>
           </div>
@@ -137,21 +138,18 @@ export default function Home() {
             </div>
           </li>
         </ul>
-        <div className="border-y border-gray-100">
-          <div className="relative flex items-center">
-            <div className="absolute top-[22px] left-6">
-              <PlusSmallIcon className="h-5 w-5 text-gray-500" />
-            </div>
-            <input
-              type="text"
-              placeholder="Add new task to the category"
-              value=""
-              className="w-full focus:outline-none block py-5 pl-12 placeholder:text-gray-500 placeholder:text-sm/6"
-            />
-            <div className="absolute top-[18px] left-[264px] hidden md:block">
-              <div className="border border-gray-100 rounded-md px-3 py-1 text-xs/5">
-                Control + Space
-              </div>
+        <div className="relative">
+          <div className="absolute inset-y-0 flex items-center justify-center left-7">
+            <PlusSmallIcon className="h-5 w-5 text-gray-500" />
+          </div>
+          <input
+            type="text"
+            placeholder="Add new task to the category"
+            className="w-full focus:outline-none border-y border-gray-100 block py-5 pl-[58px] placeholder:text-gray-500 placeholder:text-sm/6"
+          />
+          <div className="absolute top-[18px] left-[16.65rem] hidden md:block">
+            <div className="border border-gray-200 rounded-md px-3 py-1 text-xs/5 font-semibold">
+              Control + Space
             </div>
           </div>
         </div>
