@@ -176,7 +176,7 @@ export default function Home() {
         </div>
 
         <div className="absolute -right-2 -top-2 h-40 w-40 overflow-hidden">
-          <span className="top-0 absolute h-2 w-2 bg-lime-600"></span>
+          <span className="absolute top-0 h-2 w-2 bg-lime-600"></span>
           <span className="absolute bottom-0 right-0 h-2 w-2 bg-lime-600"></span>
           <div className="absolute bottom-0 right-0 block w-[calc(100%*1.4142)] origin-bottom-right rotate-45 bg-lime-300 p-2 text-center text-sm leading-tight">
             <span className="text-xs font-semibold uppercase text-lime-700">
