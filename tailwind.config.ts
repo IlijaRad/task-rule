@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 const config: Config = {
   content: [
@@ -17,6 +18,9 @@ const config: Config = {
           },
           ...defaultTheme.fontFamily.sans,
         ],
+      },
+      colors: {
+        primary: colors.yellow,
       },
       minHeight: {
         "100svh": "100svh",
