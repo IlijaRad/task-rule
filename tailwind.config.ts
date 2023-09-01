@@ -18,6 +18,9 @@ const config: Config = {
           ...defaultTheme.fontFamily.sans,
         ],
       },
+      minHeight: {
+        "100svh": "100svh",
+      },
     },
   },
   plugins: [],
